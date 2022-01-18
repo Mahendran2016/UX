@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+</head>
+
+<style>
+	.pdfContainer {
+		font-size: 13px;
+		line-height: 17px;
+		border: 2px solid black;
+
+	}
+
+	.div1 {
+		text-align: center;
+	}
+
+	.div2 {
+		border-top: 2px solid black;
+		position: relative;
+	}
+
+	.div3 {
+		display: flex;
+		border-top: 2px solid black;
+	}
+
+	.div3 .div4 {
+		width: 50%;
+		border-right: 2px solid black;
+	}
+
+	.div3 .div5 {
+		width: 50%;
+	}
+
+	.div6 {
+		display: flex;
+	}
+
+	.div7 {
+		width: 32%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	table,
+	td,
+	th {
+		border: 1px solid black;
+	}
+
+	tbody tr td.end {
+		text-align: center;
+	}
+
+	tbody tr td {
+		padding: 5px 0;
+		border-bottom: none;
+		border-top: none;
+	}
+
+	tbody tr td.last {
+		padding: 5px 0;
+		border-top: 2px solid black;
+		border-right: none;
+		border-left: none;
+		text-align: center;
+	}
+
+	tbody tr td.product {
+		padding: 0 3px;
+	}
+</style>
+
+<body>
+
+	<div class="pdfContainer">
+		<div class="div1" style="padding: 5px 15px;position:relative">
+			<div style="line-height: 20px;">
+				<div style="margin: 0;font-weight:600;font-size:17px">CREDIT NOTE</div>
+				<div style="margin: 0;font-weight:600;font-size:14px">NO.1/10, 8th Main Muthyala Nagar</div>
+				<div style="margin: 0;font-weight:600;font-size:14px">Opp Nandish Park Apartment</div>
+				<div style="margin: 0;font-weight:600;font-size:14px">Bengaluru-560054</div>
+				<p style="margin: 0;font-size: 12px;">GSTIN : 29AUUPR7909K1ZG</p>
+			</div>
+
+
+			<div style="position: absolute;right:5px;top:5px">
+				Ph./Fax : 9952595512, 9952663691
+			</div>
+			<div style="position: absolute;right:5px;bottom:5px;text-align:left">
+				<form>
+					<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+					<label for="vehicle1"> Original for Receipient</label><br>
+					<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+					<label for="vehicle2"> Duplicate for Supplier by Transporter</label><br>
+					<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+					<label for="vehicle3"> Triplicate for Supplier</label>
+				</form>
+			</div>
+		</div>
+
+
+
+		<div class="div2" style="padding: 10px 15px 10px 15px">
+			<h3 style="margin: 0;">P.O.No :</h3>
+			<h3 style="margin: 0;position: absolute; top: 10px;text-align: center;width: 100%;">CREDIT NOTE</h3>
+		</div>
+
+		<div class="div3">
+			<div class="div4" style="padding: 15px 15px">
+				<div class="div6">
+					<div class="div7">
+						<div>Reverse Charge</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px"></div>
+				</div>
+
+				<div class="div6">
+					<div class="div7">
+						<div>Credit Note No</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600">1880</div>
+				</div>
+				<div class="div6">
+					<div class="div7">
+						<div>Date</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px">04-01-2022</div>
+				</div>
+				<div class="div6">
+					<div class="div7">
+						<div>State</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;display:flex;width:66%">
+						<div style="width: 50%;">
+							Karnataka
+						</div>
+
+						<div class="div6" style="width: 50%;display:flex;">
+							<div style="width: 60%;display:flex;">
+								<div>State Code</div>
+								<div>:</div>
+							</div>
+							<div style="padding-left: 15px;text-align:end"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="div5" style="padding: 15px 15px">
+				<div class="div6">
+					<div class="div7" style="width: 50%">
+						<div>Transporation Mode</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px"> </div>
+				</div>
+
+				<div class="div6">
+					<div class="div7" style="width: 50%">
+						<div>Vehicle Number</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600"></div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 50%">
+						<div>Date of Supply</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px"></div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 50%">
+						<div>Place of Supply</div>
+						<div>:</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="div3">
+			<div class="div4">
+				<div style="display: flex;justify-content:center">
+					<h3 style="margin:10px">Details of Receiver/Billed to</h3>
+				</div>
+			</div>
+
+			<div class="div5">
+				<div style="display: flex;justify-content:center">
+					<h3 style="margin:10px">Details of Consignee/Shipped to</h4>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="div3">
+			<div class="div4" style="padding: 15px 10px 5px 10px;">
+				<div class="div6">
+					<div class="div7" style="width: 25%;">
+						<div>Reverse Charge</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 75%;">
+						M/s, ROYALMART RETAIL( VINAYAKA LAYOUT YEL)</div>
+				</div>
+
+				<div class="div6">
+					<div class="div7" style="width: 25%;">
+						<div>Address</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;width: 75%;">VINAYAKA LAYOUT , ANANTHAPURA GATE,<br>YELAHANKA NEW
+						TOWN
+					</div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 25%;">
+						<div>GSTIN</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;display:flex;width:66%">
+						<div style="width: 60%;">
+							29AATFR6606E1ZS
+						</div>
+
+						<div class="div6" style="width: 40%;display:flex;">
+							<div style="width: 60%;display:flex;">
+								<div>State Code</div>
+								<div>:</div>
+							</div>
+							<div style="padding-left: 15px">29</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="div5" style="padding: 15px 10px 5px 10px;">
+				<div class="div6">
+					<div class="div7" style="width: 25%;">
+						<div>Reverse Charge</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 75%;">
+						M/s, ROYALMART RETAIL( VINAYAKA LAYOUT YEL)</div>
+				</div>
+
+				<div class="div6">
+					<div class="div7" style="width: 25%;">
+						<div>Address</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;width: 75%;">VINAYAKA LAYOUT , ANANTHAPURA GATE,<br> YELAHANKA NEW
+						TOWN
+					</div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 25%;">
+						<div>GSTIN</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;display:flex;width:66%">
+						<div style="width: 60%;">
+							29AATFR6606E1ZS
+						</div>
+
+						<div class="div6" style="width: 40%;display:flex;">
+							<div style="width: 50%;display:flex;">
+								<div>State Code</div>
+								<div>:</div>
+							</div>
+							<div style="padding-left: 15px">29</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="overflow-x:auto;display:flex">
+			<table style="border-collapse: collapse;width: 100%;">
+				<thead>
+					<tr>
+						<th colspan="1" rowspan="2">SNo</th>
+						<th colspan="1" rowspan="2">Name of Product</th>
+						<th colspan="1" rowspan="2">HS.No</th>
+						<th colspan="1" rowspan="2">CASE</th>
+						<th colspan="1" rowspan="2">Pcs</th>
+						<th colspan="1" rowspan="2">Free</th>
+						<th colspan="1" rowspan="2">M.R.P</th>
+						<th colspan="1" rowspan="2">Basic Rate Per Pcs</th>
+						<th colspan="1" rowspan="2">Dis</th>
+						<th colspan="1" rowspan="2">Basic Rate Tax Value</th>
+						<th colspan="2">CGST</th>
+						<th colspan="2">SGST</th>
+						<th colspan="1" rowspan="2">Total</th>
+					</tr>
+					<tr>
+						<th colspan="1">Rate</th>
+						<th colspan="1">Amt</th>
+						<th colspan="1">Rate</th>
+						<th colspan="1">Amt</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td class="end">1</td>
+						<td class="product">BR CONE 45RS BUTTERSCOTCH *12PCS</td>
+						<td class="end">21050000</td>
+						<td class="end">7</td>
+						<td class="end">84</td>
+						<td class="end"></td>
+						<td class="end">540.00</td>
+						<td class="end">28.60</td>
+						<td class="end"></td>
+						<td class="end">200.21</td>
+						<td class="end">9.00</td>
+						<td class="end">18.02</td>
+						<td class="end">9.00</td>
+						<td class="end">18.02</td>
+						<td class="end">236.25</td>
+					</tr>
+					<tr>
+						<td class="end">2</td>
+						<td class="product">BR CONE 75RS BAVERIAN CHOCOLATE *12</td>
+						<td class="end">21050000</td>
+						<td class="end">3</td>
+						<td class="end">36</td>
+						<td class="end"></td>
+						<td class="end">900.00</td>
+						<td class="end">47.67</td>
+						<td class="end"></td>
+						<td class="end">143.01</td>
+						<td class="end">9.00</td>
+						<td class="end">12.87</td>
+						<td class="end">9.00</td>
+						<td class="end">12.87</td>
+						<td class="end">168.75</td>
+					</tr>
+					<tr>
+						<td class="end">3</td>
+						<td class="product">BR CONE 70RS COTTONCANDY *12PCS</td>
+						<td class="end">21050000</td>
+						<td class="end">3</td>
+						<td class="end">36</td>
+						<td class="end"></td>
+						<td class="end">840.00</td>
+						<td class="end">244.49</td>
+						<td class="end"></td>
+						<td class="end">133.47</td>
+						<td class="end">9.00</td>
+						<td class="end">12.01</td>
+						<td class="end">9.00</td>
+						<td class="end">12.01</td>
+						<td class="end">157.50</td>
+					</tr>
+					<tr>
+						<td class="end">4</td>
+						<td class="product">BR STICK 65RS VANILLA NCHOCLATE 780RS</td>
+						<td class="end">21050000</td>
+						<td class="end">2</td>
+						<td class="end">24</td>
+						<td class="end"></td>
+						<td class="end">780.00</td>
+						<td class="end">41.31</td>
+						<td class="end"></td>
+						<td class="end">82.63</td>
+						<td class="end">9.00</td>
+						<td class="end">7.44</td>
+						<td class="end">9.00</td>
+						<td class="end">7.44</td>
+						<td class="end">97.50</td>
+					</tr>
+					<tr>
+						<td class="end">6</td>
+						<td class="product">BR CONE 50RS V/CH * 12NOS</td>
+						<td class="end">21050000</td>
+						<td class="end">3</td>
+						<td class="end">36</td>
+						<td class="end"></td>
+						<td class="end">600.00</td>
+						<td class="end">231.78</td>
+						<td class="end"></td>
+						<td class="end">95.34</td>
+						<td class="end">9.00</td>
+						<td class="end">8.58</td>
+						<td class="end">9.00</td>
+						<td class="end">8.58</td>
+						<td class="end">112.50</td>
+					</tr>
+					<tr>
+						<td class="end">5</td>
+						<td class="product">BR STICK 35RS GUAVA *12PCS</td>
+						<td class="end">21050000</td>
+						<td class="end">2</td>
+						<td class="end">24</td>
+						<td class="end"></td>
+						<td class="end">420.00</td>
+						<td class="end">22.25</td>
+						<td class="end"></td>
+						<td class="end">44.49</td>
+						<td class="end">9.00</td>
+						<td class="end">4.00</td>
+						<td class="end">9.00</td>
+						<td class="end">4.00</td>
+						<td class="end">52.50</td>
+					</tr>
+					<tr>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last" style="font-weight: 600;">Total</td>
+						<td class="last"></td>
+						<td class="last">240</td>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last"></td>
+						<td class="last" style="font-weight: 600;">825.6</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+
+		<div class="div3">
+			<div class="div4" style="padding: 15px 10px 5px 10px;">
+				<div class="div6">
+					<div class="div7" style="width: 100%;">
+						<div>Total Invoice Amount in Words :</div>
+					</div>
+				</div>
+
+				<div>
+					In rupees Eight Hundred Twenty Five Only.
+				</div>
+
+				<div>
+					GST 18% = 125.85 (CGST 9% = 62.9235 SGST 9% = 62.9235) Tot.Sales 699.15
+				</div>
+
+				<div style="padding-top: 30px;">
+					Certifed that the particulars given above are true and correct
+				</div>
+			</div>
+
+			<div class="div5" style="padding: 15px 10px 5px 10px;">
+				<div class="div6">
+					<div class="div7" style="width: 70%;font-weight:600;">
+						<div>Total Amount Before Tax</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+						699.15</div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 70%;font-weight:600;">
+						<div>Add : CGST</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+						62.92</div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 70%;font-weight:600;">
+						<div>Add : CGST</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+						62.92</div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 70%;font-weight:600;">
+						<div>Tax Amount : GST</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+						125.85</div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 70%;font-weight:600;">
+						<div>Total Amount After Tax</div>
+						<div>:</div>
+					</div>
+					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+						825.00</div>
+				</div>
+				<div class="div6">
+					<div class="div7" style="width: 70%;font-weight:600;">
+						<div>Grand Total</div>
+						<!-- <div>:</div> -->
+					</div>
+					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+						825.00</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div style="padding: 0 15px;border-top: 2px solid black;">
+			<h3 style="margin-top: 0;">Declaration :</h3>
+			<div>I/We hereby certify that food/foods mentioned in this invoice
+				is/are warranted to be of the nature and
+				quality which it/these purpWe hereb</div>
+		</div>
+
+
+		<div style="padding: 0 15px;border-top: 2px solid black;line-height: 20px">
+			<div style="display: flex;justify-content: space-between">
+				<div style="text-decoration: underline;font-weight:600">Bank Details :-</div>
+				<div style="font-weight:600">For RAYAR AGENCIES</div>
+			</div>
+			<div style="display: flex;width: 50%">
+				<div style="font-weight:600;width: 50%">A/C Name : RAYAR AGENCIES</div>
+				<div style="font-weight:600;width: 50%">A/C No : 233605000449</div>
+			</div>
+			<div style="display: flex;width: 100%;justify-content:space-between">
+				<div style="display: flex;width: 50%">
+					<div style="font-weight:600;width: 50%">A/C Name : RAYAR AGENCIES</div>
+					<div style="font-weight:600;width: 50%">A/C No : 233605000449</div>
+				</div>
+				<div style="width: 50%;text-align:end">Authorised Signatory</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
