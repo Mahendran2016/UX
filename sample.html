@@ -2,96 +2,1091 @@
 <html lang="en">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 </head>
 
 <style>
-	.pdfContainer {
-		font-size: 13px;
-		line-height: 17px;
-		border: 2px solid black;
+	@media print,
+	only screen and (min-width: 768px) {
+		.pdfContainer {
+			font-size: 13px;
+			line-height: 17px;
+			border: 2px solid black;
+		}
 
+		.div1 {
+			text-align: center;
+		}
+
+		.div2 {
+			border-top: 2px solid black;
+			position: relative;
+		}
+
+		.div3 {
+			display: flex;
+			border-top: 2px solid black;
+		}
+
+		.div3 .div4 {
+			width: 50%;
+			border-right: 2px solid black;
+		}
+
+		.div3 .div5 {
+			width: 50%;
+		}
+
+		.div6 {
+			display: flex;
+		}
+
+		.div7 {
+			width: 32%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		td,
+		th {
+			border-top: 2px solid black;
+			border-left: 2px solid black;
+			border-bottom: 2px solid black;
+		}
+
+		table,
+		td:first-of-type,
+		th:first-of-type,
+		tr:first-of-type,
+		td:first-of-type {
+			border-left: none;
+		}
+
+		tbody tr td.end {
+			text-align: center;
+		}
+
+		tbody tr td {
+			padding: 5px 0;
+			border-bottom: none;
+			border-top: none;
+		}
+
+		tbody tr td.last {
+			padding: 5px 0;
+			border-top: 2px solid black;
+			border-right: none;
+			border-left: none;
+			text-align: center;
+		}
+
+		tbody tr td.product {
+			padding: 0 5px;
+		}
+
+		.class1 {
+			padding: 5px 15px;
+			position: relative
+		}
+
+		.class2 {
+			margin: 0;
+			font-weight: 600;
+			font-size: 17px
+		}
+
+		.class3 {
+			margin: 0;
+			font-size: 12px;
+		}
+
+		.class4 {
+			position: absolute;
+			right: 5px;
+			top: 5px
+		}
+
+		.class5 {
+			position: absolute;
+			right: 5px;
+			bottom: 5px;
+			text-align: left
+		}
+
+		.class6 {
+			padding: 10px 15px 10px 15px
+		}
+
+		.class7 {
+			margin: 0;
+		}
+
+		.class8 {
+			margin: 0;
+			position: absolute;
+			top: 10px;
+			text-align: center;
+			width: 100%;
+		}
+
+		.class9 {
+			padding: 15px 15px
+		}
+
+		.class10 {
+			padding-left: 15px
+		}
+
+		.class11 {
+			padding-left: 15px;
+			font-weight: 600
+		}
+
+		.class12 {
+			padding-left: 15px;
+			font-weight: 600
+		}
+
+		.class13 {
+			padding-left: 15px;
+			display: flex;
+			width: 66%
+		}
+
+		.class14 {
+			width: 50%;
+		}
+
+		.class15 {
+			width: 50%;
+			display: flex;
+		}
+
+		.class16 {
+			width: 65%;
+			display: flex;
+		}
+
+		.class17 {
+			padding-left: 15px;
+			text-align: end
+		}
+
+		.class18 {
+			padding: 15px 15px
+		}
+
+		.class19 {
+			width: 50%
+		}
+
+		.class20 {
+			padding-left: 15px
+		}
+
+		.class21 {
+			width: 50%
+		}
+
+		.class22 {
+			width: 50%
+		}
+
+		.class23 {
+			padding-left: 15px
+		}
+
+		.class24 {
+			width: 50%
+		}
+
+		.class25 {
+			display: flex;
+			justify-content: center
+		}
+
+		.class26 {
+			margin: 10px
+		}
+
+		.class27 {
+			display: flex;
+			justify-content: center
+		}
+
+		.class28 {
+			margin: 10px
+		}
+
+		.class29 {
+			width: 50%;
+			padding: 15px 10px 5px 10px;
+			border-right: 2px solid black;
+		}
+
+		.class30 {
+			width: 25%;
+		}
+
+		.class31 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 75%;
+		}
+
+		.class32 {
+			width: 25%;
+		}
+
+		.class33 {
+			padding-left: 15px;
+			width: 75%;
+		}
+
+		.class34 {
+			width: 25%;
+		}
+
+		.class35 {
+			padding-left: 15px;
+			display: flex;
+			width: 66%
+		}
+
+		.class36 {
+			width: 60%;
+		}
+
+		.class37 {
+			width: 40%;
+			display: flex;
+		}
+
+		.class38 {
+			width: 65%;
+			display: flex;
+		}
+
+		.class39 {
+			padding-left: 15px
+		}
+
+		.class40 {
+			padding: 15px 10px 5px 10px;
+		}
+
+		.class41 {
+			width: 25%;
+		}
+
+		.class42 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 75%;
+		}
+
+		.class43 {
+			width: 25%;
+		}
+
+		.class44 {
+			padding-left: 15px;
+			width: 75%;
+		}
+
+		.class45 {
+			width: 25%;
+		}
+
+		.class46 {
+			padding-left: 15px;
+			display: flex;
+			width: 66%
+		}
+
+		.class47 {
+			width: 60%;
+		}
+
+		.class48 {
+			width: 40%;
+			display: flex;
+		}
+
+		.class49 {
+			width: 65%;
+			display: flex;
+		}
+
+		.class50 {
+			padding-left: 15px
+		}
+
+		.class51 {
+			display: flex
+		}
+
+		.class52 {
+			width: 100%;
+			border-spacing: 0;
+		}
+
+		.class53 {
+			border-left: 2px solid black !important;
+		}
+
+		.class54 {
+			border-top: 2px solid black;
+		}
+
+		.class55 {
+			padding: 15px 10px 5px 10px;
+		}
+
+		.class56 {
+			width: 100%;
+		}
+
+
+		.class57 {
+			padding-top: 30px;
+		}
+
+		.class58 {
+			padding: 15px 10px 5px 10px;
+		}
+
+		.class59 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class60 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class61 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class62 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class63 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class64 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class65 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class66 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class67 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class68 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class69 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class70 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class71 {
+			padding: 0 15px;
+			border-top: 2px solid black;
+		}
+
+		.class72 {
+			margin-top: 0;
+		}
+
+		.class73 {
+			padding: 0 15px;
+			border-top: 2px solid black;
+			line-height: 20px
+		}
+
+		.class74 {
+			display: flex;
+			justify-content: space-between
+		}
+
+		.class75 {
+			text-decoration: underline;
+			font-weight: 600
+		}
+
+		.class76 {
+			font-weight: 600
+		}
+
+		.class77 {
+			display: flex;
+			width: 70%
+		}
+
+		.class78 {
+			font-weight: 600;
+			width: 50%
+		}
+
+		.class79 {
+			font-weight: 600;
+			width: 50%
+		}
+
+		.class80 {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		.class81 {
+			display: flex;
+			width: 70%
+		}
+
+		.class82 {
+			font-weight: 600;
+			width: 50%
+		}
+
+		.class83 {
+			font-weight: 600;
+			width: 50%
+		}
+
+		.class84 {
+			width: 30%;
+			text-align: end
+		}
+
+		.class85 {}
+
+		.class86 {
+			border-bottom: none !important;
+		}
+
+		.class87 {
+			border-bottom: none !important;
+		}
+
+		.class88 {}
+
+		.class89 {}
+
+		.class90 {}
+
+		.class91 {}
+
+		.class92 {}
+
+		.class93 {}
+
+		.class94 {}
+
+		.bold {
+			font-weight: 600;
+		}
+
+		.hideDesktop {
+			display: none;
+		}
 	}
 
-	.div1 {
-		text-align: center;
-	}
+	@media only screen and (max-width: 768px) {
+		.pdfContainer {
+			font-size: 13px;
+			line-height: 17px;
+			border: 2px solid black;
+			width: 100%;
+		}
 
-	.div2 {
-		border-top: 2px solid black;
-		position: relative;
-	}
+		.div1 {
+			text-align: center;
+		}
 
-	.div3 {
-		display: flex;
-		border-top: 2px solid black;
-	}
+		.div2 {
+			border-top: 2px solid black;
+			position: relative;
+		}
 
-	.div3 .div4 {
-		width: 50%;
-		border-right: 2px solid black;
-	}
+		.div3 {
+			border-top: 2px solid black;
+		}
 
-	.div3 .div5 {
-		width: 50%;
-	}
+		.div3 .div4 {}
 
-	.div6 {
-		display: flex;
-	}
+		.div3 .div5 {}
 
-	.div7 {
-		width: 32%;
-		display: flex;
-		justify-content: space-between;
-	}
+		.div6 {
+			display: flex;
+		}
 
-	table,
-	td,
-	th {
-		border: 1px solid black;
-	}
+		.div7 {
+			width: 32%;
+			display: flex;
+			justify-content: space-between;
+		}
 
-	tbody tr td.end {
-		text-align: center;
-	}
+		td,
+		th {
+			border-top: 2px solid black;
+			border-left: 2px solid black;
+			border-bottom: 2px solid black;
+		}
 
-	tbody tr td {
-		padding: 5px 0;
-		border-bottom: none;
-		border-top: none;
-	}
+		table,
+		td:first-of-type,
+		th:first-of-type,
+		tr:first-of-type,
+		td:first-of-type {
+			border-left: none;
+		}
 
-	tbody tr td.last {
-		padding: 5px 0;
-		border-top: 2px solid black;
-		border-right: none;
-		border-left: none;
-		text-align: center;
-	}
+		tbody tr td.end {
+			text-align: center;
+		}
 
-	tbody tr td.product {
-		padding: 0 3px;
+		tbody tr td {
+			padding: 5px 0;
+			border-bottom: none;
+			border-top: none;
+		}
+
+		tbody tr td.last {
+			padding: 5px 0;
+			border-top: 2px solid black;
+			border-right: none;
+			border-left: none;
+			text-align: center;
+		}
+
+		tbody tr td.product {
+			padding: 0 5px;
+		}
+
+		.class1 {
+			padding: 5px 15px;
+			position: relative
+		}
+
+		.class2 {
+			margin: 0;
+			font-weight: 600;
+			font-size: 15px
+		}
+
+		.class3 {
+			margin: 0;
+			font-size: 12px;
+		}
+
+		.class4 {
+			position: relative;
+			padding-top: 10px;
+		}
+
+		.class5 {
+			position: relative;
+			text-align: left
+		}
+
+		.class6 {
+			padding: 0 15px 10px 15px
+		}
+
+		.class7 {
+			margin: 0;
+			padding-top: 15px;
+		}
+
+		.class8 {
+			margin: 0;
+			position: relative;
+			top: 10px;
+			text-align: center;
+			width: 100%;
+		}
+
+		.class9 {
+			padding: 10px;
+			border-bottom: 2px solid black;
+		}
+
+		.class10 {
+			padding-left: 15px
+		}
+
+		.class11 {
+			padding-left: 15px;
+			font-weight: 600
+		}
+
+		.class12 {
+			padding-left: 15px;
+			font-weight: 600
+		}
+
+		.class13 {
+			padding-left: 15px;
+			display: flex;
+			width: 66%
+		}
+
+		.class14 {
+			width: 50%;
+		}
+
+		.class15 {
+			width: 50%;
+			display: flex;
+		}
+
+		.class16 {
+			width: 65%;
+			display: flex;
+		}
+
+		.class17 {
+			padding-left: 15px;
+			text-align: end
+		}
+
+		.class18 {
+			padding: 10px;
+		}
+
+		.class19 {
+			width: 40%
+		}
+
+		.class20 {
+			padding-left: 15px
+		}
+
+		.class21 {
+			width: 40%
+		}
+
+		.class22 {
+			width: 40%
+		}
+
+		.class23 {
+			padding-left: 15px
+		}
+
+		.class24 {
+			width: 40%
+		}
+
+		.class25 {
+			display: flex;
+			justify-content: center
+		}
+
+		.class26 {
+			margin: 10px
+		}
+
+		.class27 {
+			display: flex;
+			justify-content: center
+		}
+
+		.class28 {
+			margin: 10px
+		}
+
+		.class29 {
+			padding: 10px;
+			border-bottom: 2px solid black;
+		}
+
+		.class30 {
+			width: 25%;
+		}
+
+		.class31 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 75%;
+		}
+
+		.class32 {
+			width: 25%;
+		}
+
+		.class33 {
+			padding-left: 15px;
+			width: 75%;
+		}
+
+		.class34 {
+			width: 25%;
+		}
+
+		.class35 {
+			padding-left: 15px;
+			display: flex;
+			width: 75%;
+		}
+
+		.class36 {
+			width: 60%;
+		}
+
+		.class37 {
+			width: 40%;
+			display: flex;
+		}
+
+		.class38 {
+			width: 70%;
+			display: flex;
+		}
+
+		.class39 {
+			padding-left: 15px
+		}
+
+		.class40 {
+			padding: 10px;
+		}
+
+		.class41 {
+			width: 25%;
+		}
+
+		.class42 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 75%;
+		}
+
+		.class43 {
+			width: 25%;
+		}
+
+		.class44 {
+			padding-left: 15px;
+			width: 75%;
+		}
+
+		.class45 {
+			width: 25%;
+		}
+
+		.class46 {
+			padding-left: 15px;
+			display: flex;
+			width: 75%;
+		}
+
+		.class47 {
+			width: 60%;
+		}
+
+		.class48 {
+			width: 40%;
+			display: flex;
+		}
+
+		.class49 {
+			width: 70%;
+			display: flex;
+		}
+
+		.class50 {
+			padding-left: 15px
+		}
+
+		.class51 {
+			display: block;
+			overflow-x: scroll;
+		}
+
+		.class52 {
+			border-spacing: 0;
+		}
+
+		.class53 {
+			border-left: 2px solid black !important;
+			width: 100%;
+		}
+
+		.class54 {
+			border-top: 2px solid black;
+		}
+
+		.class55 {
+			padding: 10px;
+			border-bottom: 2px solid black;
+		}
+
+		.class56 {
+			width: 100%;
+		}
+
+
+		.class57 {
+			padding-top: 30px;
+		}
+
+		.class58 {
+			padding: 10px;
+		}
+
+		.class59 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class60 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class61 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class62 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class63 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class64 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class65 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class66 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class67 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class68 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class69 {
+			width: 70%;
+			font-weight: 600;
+		}
+
+		.class70 {
+			padding-left: 15px;
+			font-weight: 600;
+			padding-left: 15px;
+			width: 30%;
+			text-align: end
+		}
+
+		.class71 {
+			padding: 10px;
+			border-top: 2px solid black;
+		}
+
+		.class72 {
+			margin-top: 0;
+		}
+
+		.class73 {
+			padding: 10px;
+			border-top: 2px solid black;
+			line-height: 20px
+		}
+
+		.class74 {
+			display: flex;
+			justify-content: space-between
+		}
+
+		.class75 {
+			text-decoration: underline;
+			font-weight: 600
+		}
+
+		.class76 {
+			font-weight: 600
+		}
+
+		.class77 {
+			width: 100%
+		}
+
+		.class78 {
+			font-weight: 600;
+			width: 100%;
+			padding-top: 5px;
+		}
+
+		.class79 {
+			font-weight: 600;
+			width: 100%
+		}
+
+		.class80 {
+			width: 100%;
+			padding-top: 5px;
+		}
+
+		.class81 {
+			width: 100%;
+		}
+
+		.class82 {
+			font-weight: 600;
+			width: 100%;
+		}
+
+		.class83 {
+			font-weight: 600;
+			width: 100%;
+		}
+
+		.class84 {
+			width: 100%;
+			text-align: end;
+			padding-top: 20px;
+		}
+
+		.class85 {
+			border: none;
+			border-bottom: 2px solid black;
+		}
+
+		.class86 {
+			border-bottom: none !important;
+		}
+
+		.class87 {
+			border-bottom: none !important;
+		}
+
+		.class88 {}
+
+		.class89 {}
+
+		.class90 {}
+
+		.class91 {}
+
+		.class92 {}
+
+		.class93 {}
+
+		.class94 {}
+
+		.bold {
+			font-weight: 600;
+		}
+
+		.hideMobile {
+			display: none;
+		}
 	}
 </style>
 
 <body>
 
 	<div class="pdfContainer">
-		<div class="div1" style="padding: 5px 15px;position:relative">
+		<div class="div1 class1">
 			<div style="line-height: 20px;">
-				<div style="margin: 0;font-weight:600;font-size:17px">CREDIT NOTE</div>
-				<div style="margin: 0;font-weight:600;font-size:14px">NO.1/10, 8th Main Muthyala Nagar</div>
-				<div style="margin: 0;font-weight:600;font-size:14px">Opp Nandish Park Apartment</div>
-				<div style="margin: 0;font-weight:600;font-size:14px">Bengaluru-560054</div>
-				<p style="margin: 0;font-size: 12px;">GSTIN : 29AUUPR7909K1ZG</p>
+				<div class="class2">CREDIT NOTE</div>
+				<div class="class2">NO.1/10, 8th Main Muthyala Nagar</div>
+				<div class="class2">Opp Nandish Park Apartment</div>
+				<div class="class2">Bengaluru-560054</div>
+				<p class="class3">GSTIN : 29AUUPR7909K1ZG</p>
 			</div>
 
 
-			<div style="position: absolute;right:5px;top:5px">
+			<div class="class4">
 				Ph./Fax : 9952595512, 9952663691
 			</div>
-			<div style="position: absolute;right:5px;bottom:5px;text-align:left">
+			<div class="class5">
 				<form>
 					<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 					<label for="vehicle1"> Original for Receipient</label><br>
@@ -105,19 +1100,21 @@
 
 
 
-		<div class="div2" style="padding: 10px 15px 10px 15px">
-			<h3 style="margin: 0;">P.O.No :</h3>
-			<h3 style="margin: 0;position: absolute; top: 10px;text-align: center;width: 100%;">CREDIT NOTE</h3>
+		<div class="div2 class6">
+			<h3 class="class8">CREDIT
+				NOTE</h3>
+			<h3 class="class7">P.O.No :</h3>
+
 		</div>
 
 		<div class="div3">
-			<div class="div4" style="padding: 15px 15px">
+			<div class="div4 class9">
 				<div class="div6">
 					<div class="div7">
 						<div>Reverse Charge</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px"></div>
+					<div class="class10"></div>
 				</div>
 
 				<div class="div6">
@@ -125,61 +1122,61 @@
 						<div>Credit Note No</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;font-weight:600">1880</div>
+					<div class="class11">1880</div>
 				</div>
 				<div class="div6">
 					<div class="div7">
 						<div>Date</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px">04-01-2022</div>
+					<div class="class12">04-01-2022</div>
 				</div>
 				<div class="div6">
 					<div class="div7">
 						<div>State</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;display:flex;width:66%">
-						<div style="width: 50%;">
+					<div class="class13">
+						<div class="class14">
 							Karnataka
 						</div>
 
-						<div class="div6" style="width: 50%;display:flex;">
-							<div style="width: 60%;display:flex;">
+						<div class="div6 class15">
+							<div class="class16">
 								<div>State Code</div>
 								<div>:</div>
 							</div>
-							<div style="padding-left: 15px;text-align:end"></div>
+							<div class="class17"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="div5" style="padding: 15px 15px">
+			<div class="div5 class18">
 				<div class="div6">
-					<div class="div7" style="width: 50%">
+					<div class="div7 class19">
 						<div>Transporation Mode</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px"> </div>
+					<div class="class20"> </div>
 				</div>
 
 				<div class="div6">
-					<div class="div7" style="width: 50%">
+					<div class="div7 class21">
 						<div>Vehicle Number</div>
 						<div>:</div>
 					</div>
 					<div style="padding-left: 15px;font-weight:600"></div>
 				</div>
 				<div class="div6">
-					<div class="div7" style="width: 50%">
+					<div class="div7 class22">
 						<div>Date of Supply</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px"></div>
+					<div class="class23"></div>
 				</div>
 				<div class="div6">
-					<div class="div7" style="width: 50%">
+					<div class="div7 class24">
 						<div>Place of Supply</div>
 						<div>:</div>
 					</div>
@@ -187,104 +1184,122 @@
 			</div>
 		</div>
 
-		<div class="div3">
-			<div class="div4">
-				<div style="display: flex;justify-content:center">
-					<h3 style="margin:10px">Details of Receiver/Billed to</h3>
+		<div class="div3 ">
+			<div class="div4 ">
+				<div class="class25">
+					<h3 class="class26">Details of Receiver/Billed to</h3>
 				</div>
 			</div>
 
-			<div class="div5">
-				<div style="display: flex;justify-content:center">
-					<h3 style="margin:10px">Details of Consignee/Shipped to</h4>
+			<div class="div5 hideMobile">
+				<div class="class27">
+					<h3 class="class28">Details of Consignee/Shipped to</h4>
 
 				</div>
 			</div>
 		</div>
 
 		<div class="div3">
-			<div class="div4" style="padding: 15px 10px 5px 10px;">
+			<div class="div class29">
 				<div class="div6">
-					<div class="div7" style="width: 25%;">
+					<div class="div7 class30">
 						<div>Reverse Charge</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 75%;">
+					<div class="class31">
 						M/s, ROYALMART RETAIL( VINAYAKA LAYOUT YEL)</div>
 				</div>
 
 				<div class="div6">
-					<div class="div7" style="width: 25%;">
+					<div class="div7 class32">
 						<div>Address</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;width: 75%;">VINAYAKA LAYOUT , ANANTHAPURA GATE,<br>YELAHANKA NEW
+					<div class="class33">VINAYAKA LAYOUT , ANANTHAPURA GATE,<br>YELAHANKA NEW
 						TOWN
 					</div>
 				</div>
-				<div class="div6">
-					<div class="div7" style="width: 25%;">
+				<div class=" div6">
+					<div class="div7 class34">
 						<div>GSTIN</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;display:flex;width:66%">
-						<div style="width: 60%;">
+					<div class="class35">
+						<div class="class36">
 							29AATFR6606E1ZS
 						</div>
 
-						<div class="div6" style="width: 40%;display:flex;">
-							<div style="width: 60%;display:flex;">
+						<div class="div6 class37">
+							<div class="class38">
 								<div>State Code</div>
 								<div>:</div>
 							</div>
-							<div style="padding-left: 15px">29</div>
+							<div class="class39">29</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="div5" style="padding: 15px 10px 5px 10px;">
+			<div class="div3 class85 hideDesktop">
+				<div class="div4 hideMobile class">
+					<div class="class25">
+						<h3 class="class26">Details of Receiver/Billed to</h3>
+					</div>
+				</div>
+
+				<div class="div5 ">
+					<div class="class27">
+						<h3 class="class28">Details of Consignee/Shipped to</h4>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="div5 class40">
 				<div class="div6">
-					<div class="div7" style="width: 25%;">
+					<div class="div7 class41">
 						<div>Reverse Charge</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 75%;">
+					<div class="class42">
 						M/s, ROYALMART RETAIL( VINAYAKA LAYOUT YEL)</div>
 				</div>
 
 				<div class="div6">
-					<div class="div7" style="width: 25%;">
+					<div class="div7 class43">
 						<div>Address</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;width: 75%;">VINAYAKA LAYOUT , ANANTHAPURA GATE,<br> YELAHANKA NEW
+					<div class="class44">VINAYAKA LAYOUT , ANANTHAPURA
+						GATE,<br> YELAHANKA
+						NEW
 						TOWN
 					</div>
 				</div>
 				<div class="div6">
-					<div class="div7" style="width: 25%;">
+					<div class="div7 class45">
 						<div>GSTIN</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;display:flex;width:66%">
-						<div style="width: 60%;">
+					<div class="class46">
+						<div class="class47">
 							29AATFR6606E1ZS
 						</div>
 
-						<div class="div6" style="width: 40%;display:flex;">
-							<div style="width: 50%;display:flex;">
+						<div class="div6 class48">
+							<div class="class49">
 								<div>State Code</div>
 								<div>:</div>
 							</div>
-							<div style="padding-left: 15px">29</div>
+							<div class="class50">29</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div style="overflow-x:auto;display:flex">
-			<table style="border-collapse: collapse;width: 100%;">
+
+		<div class="class51">
+			<table class="class52">
 				<thead>
 					<tr>
 						<th colspan="1" rowspan="2">SNo</th>
@@ -297,12 +1312,12 @@
 						<th colspan="1" rowspan="2">Basic Rate Per Pcs</th>
 						<th colspan="1" rowspan="2">Dis</th>
 						<th colspan="1" rowspan="2">Basic Rate Tax Value</th>
-						<th colspan="2">CGST</th>
-						<th colspan="2">SGST</th>
+						<th colspan="2" class="class86">CGST</th>
+						<th colspan="2" class="class87">SGST</th>
 						<th colspan="1" rowspan="2">Total</th>
 					</tr>
 					<tr>
-						<th colspan="1">Rate</th>
+						<th class="class53" colspan="1">Rate</th>
 						<th colspan="1">Amt</th>
 						<th colspan="1">Rate</th>
 						<th colspan="1">Amt</th>
@@ -427,7 +1442,7 @@
 						<td class="last"></td>
 						<td class="last"></td>
 						<td class="last"></td>
-						<td class="last" style="font-weight: 600;">825.6</td>
+						<td class="last bold">825.6</td>
 					</tr>
 
 				</tbody>
@@ -435,10 +1450,10 @@
 		</div>
 
 
-		<div class="div3">
-			<div class="div4" style="padding: 15px 10px 5px 10px;">
+		<div class="div3 class54">
+			<div class="div4 class55">
 				<div class="div6">
-					<div class="div7" style="width: 100%;">
+					<div class="div7 class56">
 						<div>Total Invoice Amount in Words :</div>
 					</div>
 				</div>
@@ -451,87 +1466,87 @@
 					GST 18% = 125.85 (CGST 9% = 62.9235 SGST 9% = 62.9235) Tot.Sales 699.15
 				</div>
 
-				<div style="padding-top: 30px;">
+				<div class="class57">
 					Certifed that the particulars given above are true and correct
 				</div>
 			</div>
 
-			<div class="div5" style="padding: 15px 10px 5px 10px;">
+			<div class="div5 class58">
 				<div class="div6">
-					<div class="div7" style="width: 70%;font-weight:600;">
+					<div class="div7 class59">
 						<div>Total Amount Before Tax</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+					<div class="class60">
 						699.15</div>
 				</div>
 				<div class="div6">
-					<div class="div7" style="width: 70%;font-weight:600;">
+					<div class="div7 class61">
 						<div>Add : CGST</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+					<div class=" class62">
 						62.92</div>
 				</div>
 				<div class="div6">
-					<div class="div7" style="width: 70%;font-weight:600;">
+					<div class="div7 class63">
 						<div>Add : CGST</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+					<div class="class64">
 						62.92</div>
 				</div>
 				<div class="div6">
-					<div class="div7" style="width: 70%;font-weight:600;">
+					<div class="div7 class65">
 						<div>Tax Amount : GST</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+					<div class="class66">
 						125.85</div>
 				</div>
 				<div class="div6">
-					<div class="div7" style="width: 70%;font-weight:600;">
+					<div class="div7 class67">
 						<div>Total Amount After Tax</div>
 						<div>:</div>
 					</div>
-					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+					<div class="class68">
 						825.00</div>
 				</div>
 				<div class="div6">
-					<div class="div7" style="width: 70%;font-weight:600;">
+					<div class="div7 class69">
 						<div>Grand Total</div>
 						<!-- <div>:</div> -->
 					</div>
-					<div style="padding-left: 15px;font-weight:600;padding-left: 15px;width: 30%;text-align:end">
+					<div class="class70">
 						825.00</div>
 				</div>
 
 			</div>
 		</div>
 
-		<div style="padding: 0 15px;border-top: 2px solid black;">
-			<h3 style="margin-top: 0;">Declaration :</h3>
+		<div class="class71">
+			<h3 class="class72">Declaration :</h3>
 			<div>I/We hereby certify that food/foods mentioned in this invoice
 				is/are warranted to be of the nature and
 				quality which it/these purpWe hereb</div>
 		</div>
 
 
-		<div style="padding: 0 15px;border-top: 2px solid black;line-height: 20px">
-			<div style="display: flex;justify-content: space-between">
-				<div style="text-decoration: underline;font-weight:600">Bank Details :-</div>
-				<div style="font-weight:600">For RAYAR AGENCIES</div>
+		<div class="class73">
+			<div class="class74">
+				<div class="class75">Bank Details :-</div>
+				<div class="class76">For RAYAR AGENCIES</div>
 			</div>
-			<div style="display: flex;width: 50%">
-				<div style="font-weight:600;width: 50%">A/C Name : RAYAR AGENCIES</div>
-				<div style="font-weight:600;width: 50%">A/C No : 233605000449</div>
+			<div class="class77">
+				<div class="class78">A/C Name : RAYAR AGENCIES</div>
+				<div class="class79">A/C No : 233605000449</div>
 			</div>
-			<div style="display: flex;width: 100%;justify-content:space-between">
-				<div style="display: flex;width: 50%">
-					<div style="font-weight:600;width: 50%">A/C Name : RAYAR AGENCIES</div>
-					<div style="font-weight:600;width: 50%">A/C No : 233605000449</div>
+			<div class="class80">
+				<div class="class81">
+					<div class="class82">A/C Name : RAYAR AGENCIES</div>
+					<div class="class83">A/C No : 233605000449</div>
 				</div>
-				<div style="width: 50%;text-align:end">Authorised Signatory</div>
+				<div class="class84">Authorised Signatory</div>
 			</div>
 		</div>
 	</div>
